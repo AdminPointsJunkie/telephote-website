@@ -1,11 +1,13 @@
 # Telephote website
 
-Static marketing and setup site for the portable Windows app. The iPhone artwork
+Static marketing and setup site for the portable Windows app and Linux preview. The iPhone artwork
 is shared with the iPhone application. `assets/windows-app.png` is a rendered
 Windows UI preview, with no captured phone video.
 
 - Hosting: GitHub Pages from `main`, repository root.
-- Windows downloads: GitHub Releases in this repository; do not commit ZIPs.
+- Desktop downloads: GitHub Releases in this repository; do not commit ZIP/tar.gz archives.
+- Linux: linux.html and the homepage card link to v0.4.0-linux.1. Keep the preview status, v4l2loopback/usbmuxd requirements and manual-update limit visible.
+- assets/linux-app.png is an actual Ubuntu-rendered UI with no phone video.
 - iPhone download: intentionally unavailable until a public App Store/TestFlight
   URL is supplied. Replace the disabled button in `index.html` with that URL.
 - No analytics, visitor accounts, form collection or backend.
@@ -16,7 +18,7 @@ Windows UI preview, with no captured phone video.
 ## Search metadata
 
 The page is static HTML, with a descriptive title, description, one H1, canonical
-URL, social sharing tags, accessible image text and structured data for the two
+URL, social sharing tags, accessible image text and structured data for the desktop and iPhone
 applications. Prices match the visible download cards. No ratings or reviews are
 invented; structured data does not guarantee a Google rich result.
 

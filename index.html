@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0b1722">
-  <title>iPhone &amp; Android Webcam for Windows | Telephote — No Subscriptions</title>
-  <meta name="description" content="Turn your iPhone into a Windows webcam. Free portable Windows app, A$5 once for iPhone, no subscriptions. USB, Wi-Fi and a separate Android test build.">
+  <title>iPhone &amp; Android Webcam for Windows | Telephote</title>
+  <meta name="description" content="Use your iPhone as a Windows webcam with a free portable app. A$5 once for iPhone, no subscriptions. Android test build and separate Linux preview available.">
   <link rel="canonical" href="https://telephote.co/">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta property="og:title" content="Telephote — Your phone. Your Windows webcam.">
-  <meta property="og:description" content="iPhone and Android webcam options for Windows. A$5 once for iPhone. Free portable Windows app. No subscriptions.">
+  <meta property="og:description" content="Phone webcam for Windows and a new Linux preview for Ubuntu and Mint. Free desktop apps. iPhone A$5 once. No subscriptions.">
   <meta property="og:url" content="https://telephote.co/">
   <meta property="og:site_name" content="Telephote">
   <meta property="og:locale" content="en_AU">
@@ -20,7 +20,7 @@
   <meta property="og:image:alt" content="Telephote camera and cable logo">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Telephote — Phone Webcam for Windows">
-  <meta name="twitter:description" content="A$5 once for iPhone. Free portable Windows download. No subscriptions. Android test build available.">
+  <meta name="twitter:description" content="Free Windows and Linux preview downloads. iPhone A$5 once. Android camera options. No subscriptions.">
   <meta name="twitter:image" content="https://telephote.co/assets/telephote.png">
   <script type="application/ld+json">
 {
@@ -40,7 +40,7 @@
       "applicationCategory": "MultimediaApplication",
       "url": "https://telephote.co/#downloads",
       "image": "https://telephote.co/assets/telephote.png",
-      "description": "Telephote turns an iPhone into a webcam for Windows over USB or local Wi-Fi. A$5 AUD one-time iPhone purchase, no subscriptions. Public iPhone download coming soon. Free portable Windows companion.",
+      "description": "Telephote turns an iPhone into a webcam for Windows, with a separate Linux preview. A$5 AUD one-time iPhone purchase, no subscriptions. Public iPhone download coming soon. Free desktop companions.",
       "offers": {
         "@type": "Offer",
         "price": "5.00",
@@ -64,6 +64,23 @@
       }
     },
     {
+      "@type": "SoftwareApplication",
+      "@id": "https://telephote.co/linux.html#app",
+      "name": "Telephote for Linux Preview",
+      "operatingSystem": "Ubuntu 24.04+ or Linux Mint 22+, x86-64",
+      "applicationCategory": "MultimediaApplication",
+      "softwareVersion": "0.4.0-linux.1",
+      "url": "https://telephote.co/linux.html",
+      "downloadUrl": "https://github.com/AdminPointsJunkie/telephote-website/releases/download/v0.4.0-linux.1/Telephote-0.4.0-linux.1-linux-x64.tar.gz",
+      "screenshot": "https://telephote.co/assets/linux-app.png",
+      "description": "Free portable Linux phone webcam preview with iPhone QR pairing, Android camera inputs, picture controls, snapshots and recording. Meeting-app output requires an existing accessible v4l2loopback device; iPhone USB requires existing usbmuxd. Live phone and meeting-app testing remains pending.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "AUD"
+      }
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -71,7 +88,7 @@
           "name": "How much does Telephote cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Telephote iPhone app costs A$5 (Australian dollars), paid once. The portable Windows app is free. There are no Telephote subscriptions or recurring fees. Both apps are needed for an iPhone webcam; the public iPhone download is coming soon. Third-party Android apps may charge separately."
+            "text": "The Telephote iPhone app costs A$5 (Australian dollars), paid once. The portable Windows app and Linux preview are free. There are no Telephote subscriptions or recurring fees. Both apps are needed for an iPhone webcam; the public iPhone download is coming soon. Third-party Android apps may charge separately."
           }
         },
         {
@@ -87,7 +104,15 @@
           "name": "Can I update without downloading a ZIP each time?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Version 0.3.1 and the Android test build include Updates → Check for updates. Download a newer matching version inside the app, stop camera and recording, then choose Restart & update. Users of older versions need to extract the updater-enabled ZIP once. Read the update guide."
+            "text": "Windows version 0.3.1 and the Windows Android test build include Updates → Check for updates. Download a newer matching version inside the app, stop camera and recording, then choose Restart & update. Users of older versions need to extract the updater-enabled ZIP once. Linux preview updates are manual: extract the new archive into a new folder. Read the update guide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Telephote support Linux?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, a separate free preview targets Ubuntu 24.04+ and Linux Mint 22+ on Intel/AMD 64-bit PCs. It includes iPhone QR pairing, existing usbmuxd USB support, Android MJPEG/UVC inputs, picture controls and recording. Meeting-app output needs an existing accessible v4l2loopback device. Ubuntu automated tests passed; physical phones, Linux Mint and live meeting calls still need testing. Read the Linux setup guide."
           }
         },
         {
@@ -100,7 +125,7 @@
         },
         {
           "@type": "Question",
-          "name": "Can I use it with Microsoft Teams?",
+          "name": "Can I use it with Microsoft Teams on Windows?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes, Telephote makes its output available through Windows’ existing camera facilities. Enable “Use in Teams and other apps”, keep Telephote open and choose AvStream Media Device in Teams’ camera settings. Camera availability on a managed work PC still follows your organisation’s policies."
@@ -116,7 +141,7 @@
         },
         {
           "@type": "Question",
-          "name": "What if USB isn’t available on my PC?",
+          "name": "What if iPhone USB isn’t available on Windows?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "USB needs a compatible Apple USB hardware driver already on the PC. Telephote doesn’t install one. You can use local Wi-Fi pairing instead when both devices can reach each other on the same network."
@@ -127,7 +152,7 @@
           "name": "Does Telephote send video to the cloud?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Telephote sends camera video directly to your PC over USB or an encrypted local Wi-Fi connection. Your meeting app handles the online call. Local recordings are saved where you choose on Windows."
+            "text": "Telephote sends iPhone video directly to your computer over USB or encrypted local Wi-Fi. Android stream security depends on the phone app and protocol; plain HTTP MJPEG is unencrypted. Your meeting app handles the online call. Recordings stay in the location you choose on your computer."
           }
         },
         {
@@ -152,17 +177,17 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header wrap">
     <a class="brand" href="./" aria-label="Telephote home"><img src="assets/telephote.png" width="42" height="42" alt=""><span>Telephote<span class="brand-dot">.</span></span></a>
-    <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="android.html">Android</a><a class="nav-download" href="#downloads">Get Telephote <span aria-hidden="true">↗</span></a></nav>
+    <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="android.html">Android</a><a href="linux.html">Linux</a><a class="nav-download" href="#downloads">Get Telephote <span aria-hidden="true">↗</span></a></nav>
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow"><span class="signal"></span> PHONE WEBCAM FOR WINDOWS</p>
         <h1 id="hero-title">Your phone.<br>Your Windows<br><span>webcam.</span></h1>
-        <p class="hero-intro">A better camera is already in your pocket. Use your iPhone as a Windows webcam over USB or Wi-Fi. Android support is available in a separate test build.</p>
-        <div class="hero-actions"><a class="button primary" href="#downloads">Get Telephote <span aria-hidden="true">↗</span></a><a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-intro">A better camera is already in your pocket. Use your iPhone as a Windows webcam over USB or Wi-Fi. Android support is available in a separate Windows test build.</p>
+        <nav class="platform-picker" aria-label="Choose your desktop platform"><a href="/#downloads" aria-current="page">Windows <span>Portable app</span></a><a href="/linux.html">Linux <span>Ubuntu &amp; Mint preview</span></a></nav><div class="hero-actions"><a class="button primary" href="#downloads">Get Telephote <span aria-hidden="true">↗</span></a><a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a></div>
         <p class="hero-note">Portable on Windows. Unzip, open, connect.<br><strong>No Windows installer.</strong></p>
-        <p class="subscription-promise">No subscriptions. Ever.</p><p class="hero-price">A$5 once for iPhone <span aria-hidden="true">·</span> Free Windows app</p>
+        <p class="subscription-promise">No subscriptions. Ever.</p><p class="hero-price">A$5 once for iPhone <span aria-hidden="true">·</span> Free Windows app</p><a class="linux-announcement" href="linux.html"><span class="badge">NEW</span> Also on Linux: Ubuntu &amp; Mint preview <span aria-hidden="true">→</span></a>
       </div>
       <div class="hero-visual" aria-label="Illustration of an iPhone connected to a Windows webcam app">
         <div class="visual-label"><span class="signal"></span> A NEW JOB FOR YOUR IPHONE</div>
@@ -172,13 +197,13 @@
           <div class="device-controls"><span><span class="signal"></span> Your camera. Your controls.</span><span class="control-pill">USB / Wi-Fi</span></div>
         </div>
         <div class="phone"><div class="phone-notch"></div><img src="assets/telephote.png" width="90" height="90" alt=""><b>Telephote</b><span>iPhone companion</span><div class="phone-button">Your meeting camera</div><div class="phone-home"></div></div>
-        <div class="portable-note"><span class="note-icon" aria-hidden="true">↳</span><div><strong>One portable folder.</strong><span>No Windows setup wizard.</span></div></div>
+        <div class="portable-note"><span class="note-icon" aria-hidden="true">↳</span><div><strong>One portable folder.</strong><span>Download. Extract. Open.</span></div></div>
       </div>
     </section>
     <div class="benefit-strip"><div class="wrap"><span>Portable Windows app</span><span>USB + local Wi-Fi</span><span>Camera &amp; zoom controls</span><span>No subscriptions</span></div></div>
 
     <section class="section wrap" id="how-it-works" aria-labelledby="steps-title">
-      <div class="section-heading"><div><p class="eyebrow">IPHONE SETUP</p><h2 id="steps-title">Two apps.<br>Three simple steps.</h2></div><p>The iPhone app captures your camera. The portable Windows app receives it and makes it available to your meeting app.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">IPHONE SETUP ON WINDOWS</p><h2 id="steps-title">Two apps.<br>Three simple steps.</h2></div><p>The iPhone app captures your camera. The portable Windows app receives it and makes it available to your meeting app.</p></div>
       <div class="steps">
         <article class="step"><span class="step-number">01</span><div class="step-icon" aria-hidden="true">▯</div><h3>Get the iPhone app.</h3><p>Download Telephote on your iPhone. Open it and allow camera access.</p><a class="text-link" href="#downloads">iPhone download information <span aria-hidden="true">↗</span></a></article>
         <article class="step"><span class="step-number">02</span><div class="step-icon" aria-hidden="true">↓</div><h3>Unzip it on Windows.</h3><p>Download the portable Windows ZIP, extract the whole folder and open <strong>Telephote.exe</strong>. There’s no Windows installer to run.</p><a class="text-link" href="#downloads">Get the Windows app <span aria-hidden="true">↗</span></a></article>
@@ -203,32 +228,38 @@
     </section>
 
     <section class="downloads-section" id="downloads" aria-labelledby="download-title"><div class="wrap">
-      <div class="section-heading"><div><p class="eyebrow">GET TELEPHOTE</p><h2 id="download-title">Your next webcam<br>is already with you.</h2></div><p>For iPhone, use the Telephote companion and the free Windows app. For Android, use the separate test build below. No recurring Telephote fees.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">CHOOSE YOUR DOWNLOAD</p><h2 id="download-title">Your next webcam<br>is already with you.</h2></div><p>For Windows, get the iPhone companion and Windows app below. Linux has its own preview download and setup guide. The desktop apps are free, with no Telephote subscription.</p></div>
       <div class="download-cards">
-        <article class="download-card"><div class="download-platform"><span>01 / IPHONE</span><span class="badge">Companion app</span></div><h3>Telephote for iPhone</h3><div class="app-price">A$5 <span>AUD · one-time purchase</span></div><p>Your iPhone captures and sends the video to your PC. Pay once. No subscription.</p><button class="button unavailable" type="button" disabled>iPhone download coming soon</button><p class="download-meta">Public download details will appear here. Already have the iPhone beta? You can use the Windows download.</p></article>
+        <article class="download-card"><div class="download-platform"><span>01 / IPHONE</span><span class="badge">Companion app</span></div><h3>Telephote for iPhone</h3><div class="app-price">A$5 <span>AUD · one-time purchase</span></div><p>Your iPhone captures and sends the video to your PC. Pay once. No subscription.</p><button class="button unavailable" type="button" disabled>iPhone download coming soon</button><p class="download-meta">Public download details will appear here. Already have the iPhone beta? Use the Windows app or Linux preview.</p></article>
         <article class="download-card windows-download"><div class="download-platform"><span>02 / WINDOWS</span><span class="badge">Portable beta</span></div><h3>Telephote for Windows</h3><div class="app-price">Free <span>Windows companion</span></div><p>Download the ZIP, extract the complete folder and run Telephote.exe.</p><a class="button primary" href="https://github.com/AdminPointsJunkie/telephote-website/releases/download/v0.3.1/Telephote-0.3.1-portable-x64.zip">Download free Windows ZIP <span aria-hidden="true">↓</span></a><p class="download-meta">Windows 11 · x64 · Version 0.3.1<br>No Windows installer. Extract the whole folder.<br>Includes Updates → Check for updates.</p><a class="small-link" href="https://github.com/AdminPointsJunkie/telephote-website/releases/tag/v0.3.1">Release notes &amp; SHA-256 checksum ↗</a></article>
       </div>
+
+      <article class="linux-download" id="linux" aria-labelledby="linux-title">
+        <div><p class="eyebrow">NEW · LINUX PREVIEW</p><h3 id="linux-title">Your phone camera.<br>Now on Linux.</h3><p>A separate portable app for Ubuntu and Linux Mint, with iPhone and Android camera inputs. Visit the Linux page for its features, connection steps and meeting-app camera requirements.</p><ul class="linux-highlights"><li>Free portable desktop app</li><li>iPhone + Android inputs</li><li>No Telephote subscription</li></ul><a class="text-link" href="linux.html">Explore Linux features &amp; setup <span aria-hidden="true">→</span></a></div>
+        <div class="linux-download-action"><span class="badge">Ubuntu / Linux Mint · Intel &amp; AMD 64-bit</span><div class="app-price">Free <span>Linux companion</span></div><a class="button primary" href="https://github.com/AdminPointsJunkie/telephote-website/releases/download/v0.4.0-linux.1/Telephote-0.4.0-linux.1-linux-x64.tar.gz">Download Linux preview <span aria-hidden="true">↓</span></a><p class="download-meta">Ubuntu 24.04+ · Mint 22+ · 0.4.0-linux.1<br>43.2 MiB · .tar.gz · Runtime included</p><p class="linux-requirements"><strong>Camera output needs an existing v4l2loopback device.</strong> iPhone USB uses an existing usbmuxd service. Telephote installs neither. Preview and recording work without a loopback device.</p><a class="small-link" href="https://github.com/AdminPointsJunkie/telephote-website/releases/tag/v0.4.0-linux.1">Release notes &amp; SHA-256 checksum ↗</a></div>
+      </article>
     </div></section>
 
 
     <section class="section wrap android-section" id="android" aria-labelledby="android-title">
-      <div class="section-heading"><div><p class="eyebrow">ANDROID · SEPARATE TEST BUILD</p><h2 id="android-title">Another phone.<br>The same idea.</h2></div><p>Try a built-in USB webcam or connect a compatible Android camera app. Keep this test download in its own folder.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">ANDROID · SEPARATE TEST BUILD</p><h2 id="android-title">Another phone.<br>The same idea.</h2></div><p>Try a built-in USB webcam or a compatible Android camera app. Use this separate test build on Windows, or choose Android input in the Linux preview.</p></div>
       <div class="download-cards"><article class="download-card"><h3>USB Webcam mode.</h3><p>If your phone offers <strong>USB → Webcam</strong>, connect it with a data cable and choose it in Telephote. No Android companion is needed for this mode.</p><p class="download-meta">Support depends on the phone manufacturer. Charging and file-transfer modes are not webcams.</p></article><article class="download-card"><h3>An Android camera app.</h3><p>Use IP Webcam, DroidCam Classic or a compatible local MJPEG feed on the same network. Enter the phone’s IP and port in Telephote.</p><p class="download-meta">No separate Windows client. Third-party app pricing and limits apply. RTSP and proprietary USB protocols are not supported.</p></article></div>
       <div class="android-download"><div><span class="badge">Android testing</span><h3>Telephote Android Test</h3><p>Free Windows 11 x64 ZIP · 0.3.1-android.2 · In-app updates included.</p><p class="download-meta">Physical Android and Android-to-Teams verification is still pending. Keep the regular app closed when testing Teams output.</p></div><div><a class="button primary" href="https://github.com/AdminPointsJunkie/telephote-website/releases/download/v0.3.1-android.2/Telephote-Android-Test-x64.zip">Download Android test ZIP <span aria-hidden="true">↓</span></a><a class="small-link" href="android.html">Android setup &amp; compatibility →</a></div></div>
     </section>
     <section class="section wrap faq-section" aria-labelledby="faq-title"><div><p class="eyebrow">A FEW USEFUL DETAILS</p><h2 id="faq-title">Before your<br>first call.</h2></div><div class="faq-list">
-      <details><summary>How much does Telephote cost?</summary><p>The Telephote iPhone app costs A$5 (Australian dollars), paid once. The portable Windows app is free. There are no Telephote subscriptions or recurring fees. Both apps are needed for an iPhone webcam; the public iPhone download is coming soon. Third-party Android apps may charge separately.</p></details>
+      <details><summary>How much does Telephote cost?</summary><p>The Telephote iPhone app costs A$5 (Australian dollars), paid once. The portable Windows app and Linux preview are free. There are no Telephote subscriptions or recurring fees. Both apps are needed for an iPhone webcam; the public iPhone download is coming soon. Third-party Android apps may charge separately.</p></details>
       <details><summary>Can I use an Android phone as a webcam?</summary><p>The separate Android test build accepts a phone’s built-in USB Webcam mode or a local MJPEG feed from an Android webcam app, such as IP Webcam or DroidCam Classic. USB Webcam mode needs no phone companion. Network streaming needs a compatible phone app. Physical Android testing is still in progress. <a href="android.html">Read the Android setup guide</a>.</p></details>
-      <details><summary>Can I update without downloading a ZIP each time?</summary><p>Version 0.3.1 and the Android test build include Updates → Check for updates. Download a newer matching version inside the app, stop camera and recording, then choose Restart &amp; update. Users of older versions need to extract the updater-enabled ZIP once. <a href="updates.html">Read the update guide</a>.</p></details>
+      <details><summary>Can I update without downloading a ZIP each time?</summary><p>Windows version 0.3.1 and the Windows Android test build include Updates → Check for updates. Download a newer matching version inside the app, stop camera and recording, then choose Restart &amp; update. Users of older versions need to extract the updater-enabled ZIP once. Linux preview updates are manual: extract the new archive into a new folder. <a href="updates.html">Read the update guide</a>.</p></details>
+      <details><summary>Does Telephote support Linux?</summary><p>Yes, a separate free preview targets Ubuntu 24.04+ and Linux Mint 22+ on Intel/AMD 64-bit PCs. It includes iPhone QR pairing, existing usbmuxd USB support, Android MJPEG/UVC inputs, picture controls and recording. Meeting-app output needs an existing accessible v4l2loopback device. Ubuntu automated tests passed; physical phones, Linux Mint and live meeting calls still need testing. <a href="linux.html">Read the Linux setup guide</a>.</p></details>
       <details><summary>Does “portable” really mean no Windows installer?</summary><p>Yes. Extract the complete ZIP and run Telephote.exe from its folder. The Windows runtime is included. The iPhone companion is a separate app that needs to be installed on your phone.</p></details>
-      <details><summary>Can I use it with Microsoft Teams?</summary><p>Yes, Telephote makes its output available through Windows’ existing camera facilities. Enable “Use in Teams and other apps”, keep Telephote open and choose AvStream Media Device in Teams’ camera settings. Camera availability on a managed work PC still follows your organisation’s policies.</p></details>
+      <details><summary>Can I use it with Microsoft Teams on Windows?</summary><p>Yes, Telephote makes its output available through Windows’ existing camera facilities. Enable “Use in Teams and other apps”, keep Telephote open and choose AvStream Media Device in Teams’ camera settings. Camera availability on a managed work PC still follows your organisation’s policies.</p></details>
       <details><summary>Do my iPhone and PC need the same Wi-Fi?</summary><p>Only for Wi-Fi pairing. Both devices must be on the same local network; your PC can also be connected by Ethernet. A direct USB connection does not depend on the phone and PC sharing Wi-Fi.</p></details>
-      <details><summary>What if USB isn’t available on my PC?</summary><p>USB needs a compatible Apple USB hardware driver already on the PC. Telephote doesn’t install one. You can use local Wi-Fi pairing instead when both devices can reach each other on the same network.</p></details>
-      <details><summary>Does Telephote send video to the cloud?</summary><p>Telephote sends camera video directly to your PC over USB or an encrypted local Wi-Fi connection. Your meeting app handles the online call. Local recordings are saved where you choose on Windows.</p></details>
+      <details><summary>What if iPhone USB isn’t available on Windows?</summary><p>USB needs a compatible Apple USB hardware driver already on the PC. Telephote doesn’t install one. You can use local Wi-Fi pairing instead when both devices can reach each other on the same network.</p></details>
+      <details><summary>Does Telephote send video to the cloud?</summary><p>Telephote sends iPhone video directly to your computer over USB or encrypted local Wi-Fi. Android stream security depends on the phone app and protocol; plain HTTP MJPEG is unencrypted. Your meeting app handles the online call. Recordings stay in the location you choose on your computer.</p></details>
       <details><summary>Does it also replace my microphone?</summary><p>Telephote carries video. Keep using your headset, laptop microphone or another microphone selected in your meeting app.</p></details>
     </div></section>
-    <aside class="wrap download-stat" aria-label="Download statistics"><strong data-download-count>Download count loading…</strong><span>GitHub ZIP downloads across all releases, including updates and repeat downloads. <a href="privacy.html">Download privacy</a></span></aside>
+    <aside class="wrap download-stat" aria-label="Download statistics"><strong data-download-count>Download count loading…</strong><span>GitHub app downloads across Windows, Android test and Linux releases, including updates and repeat downloads. <a href="privacy.html">Download privacy</a></span></aside>
   </main>
-  <footer class="wrap footer"><a class="brand" href="./"><img src="assets/telephote.png" width="34" height="34" alt=""><span>Telephote<span class="brand-dot">.</span></span></a><p>Your phone. Your Windows webcam.</p><div class="footer-links"><a href="android.html">Android</a><a href="updates.html">Updates</a><a href="privacy.html">Download privacy</a><a href="/privacy/">App privacy</a><a href="/support/">Support</a><a href="#downloads">Downloads ↑</a></div><small>iPhone is a trademark of Apple Inc. Windows and Microsoft Teams are trademarks of Microsoft. Telephote is an independent product.</small></footer>
+  <footer class="wrap footer"><a class="brand" href="./"><img src="assets/telephote.png" width="34" height="34" alt=""><span>Telephote<span class="brand-dot">.</span></span></a><p>Your phone. Your desktop webcam.</p><div class="footer-links"><a href="linux.html">Linux</a><a href="android.html">Android</a><a href="updates.html">Updates</a><a href="privacy.html">Download privacy</a><a href="/privacy/">App privacy</a><a href="/support/">Support</a><a href="#downloads">Downloads ↑</a></div><small>iPhone is a trademark of Apple Inc. Windows and Microsoft Teams are trademarks of Microsoft. Telephote is an independent product.</small></footer>
 </body>
 </html>
