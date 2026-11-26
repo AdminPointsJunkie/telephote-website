@@ -18,3 +18,6 @@ tabs.forEach((tab, index) => {
     if (next) { event.preventDefault(); choose(next, true); }
   });
 });
+
+async function showDownloadCount(){const node=document.querySelector('[data-download-count]');if(!node)return;try{let count=0;for(let page=1;page<=10;page++){const response=await fetch('https://api.github.com/repos/AdminPointsJunkie/telephote-website/releases?per_page=100&page='+page,{signal:AbortSignal.timeout(8000)});if(!response.ok)throw Error('Unavailable');const releases=await response.json();for(const release of releases){if(release.draft)continue;for(const asset of release.assets??[]){if(/^Telephote-(?:[0-9.]+-portable-x64|Android-Test-x64)\.zip$/.test(asset.name))count+=asset.download_count??0;}}if(releases.length<100)break;}node.textContent=count.toLocaleString()+' ZIP downloads';}catch{node.textContent='Download count temporarily unavailable';}}
+showDownloadCount();
