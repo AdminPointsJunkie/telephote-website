@@ -1,0 +1,23 @@
+name: Delete expired download details
+on:
+  schedule:
+    - cron: '17 18 * * *'
+  workflow_dispatch:
+permissions: {}
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Delete records older than 365 days
+        env:
+          MAINTENANCE_TOKEN: ${{ secrets.TELEPHOTE_STATS_MAINTENANCE_TOKEN }}
+          SERVICE_TOKEN: ${{ secrets.TELEPHOTE_STATS_SERVICE_TOKEN }}
+        run: |
+          test -n "$MAINTENANCE_TOKEN"
+          test -n "$SERVICE_TOKEN"
+          curl --fail-with-body --silent --show-error --max-time 40 --retry 2 \
+            -X POST \
+            -H "Authorization: Bearer $MAINTENANCE_TOKEN" \
+            -H "OAI-Sites-Authorization: Bearer $SERVICE_TOKEN" \
+            https://telephote-download-stats.awake-quail-8285.chatgpt.site/api/maintenance
