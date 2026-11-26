@@ -46,3 +46,5 @@ HTTPS enforcement is enabled. HTTP, www and the former GitHub Pages URL return
 permanent redirects to https://telephote.co/.
 
 Reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+
+Tux artwork: assets/tux.svg from https://commons.wikimedia.org/wiki/File:Tux.svg. Original drawing by Larry Ewing with The GIMP; vector contributors Simon Budig and Garrett LeSage. The required redistribution notice is preserved in assets/Tux-Copyright.txt and linked from pages displaying it.
