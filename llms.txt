@@ -8,7 +8,8 @@ Android support is a separate test release, 0.3.1-android.2, for USB UVC webcams
 
 Linux preview 0.4.0-linux.1 targets Ubuntu 24.04+ and Linux Mint 22+ on Intel/AMD x86-64. Extract the complete tar.gz and run Start-Telephote.sh; the runtime is included. iPhone QR pairing, existing usbmuxd USB transport and Android MJPEG/UVC inputs are available. Meeting-app output requires an existing accessible v4l2loopback device. The app installs no modules or services. Ubuntu synthetic pipeline, real kernel loopback output and packaged desktop startup passed; physical phones, Linux Mint and live calls remain unverified. Linux updates are manual.
 
-- [Linux preview, downloads and requirements](https://telephote.co/linux.html)
+- [Linux preview and download](https://telephote.co/linux.html)
+- [Detailed Linux setup guide](https://telephote.co/linux-setup.html)
 - [Product, pricing and downloads](https://telephote.co/)
 - [Android setup and limitations](https://telephote.co/android.html)
 - [In-app updates](https://telephote.co/updates.html)
