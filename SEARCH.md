@@ -1,6 +1,6 @@
 # Search visibility
 
-The public site contains crawlable HTML with product facts, one-time iPhone pricing, no-subscription wording, Android limitations and update instructions. Canonical URLs use https://telephote.co/. The sitemap lists the four public pages. Structured data mirrors visible content; no ratings or endorsements are invented.
+The public site contains crawlable HTML with product facts, one-time iPhone pricing, no-subscription wording, Android limitations and update instructions. Canonical URLs use https://telephote.co/. The sitemap includes the product, guides, support and privacy pages. Structured data mirrors visible content; no ratings or endorsements are invented.
 
 robots.txt allows indexing, including Googlebot, OAI-SearchBot and Claude-SearchBot under the wildcard rule. llms.txt is an optional factual navigation aid, not a requirement for Google AI features or a ranking guarantee. IndexNow announces changed URLs to participating engines; acceptance does not mean indexing.
 
