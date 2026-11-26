@@ -39,6 +39,8 @@ four A records, and `www` points to the GitHub account's Pages hostname:
 
 The repository's Pages custom domain and root `CNAME` file use `telephote.co`.
 GoDaddy nameservers, the domain-connect record and DMARC were preserved. GitHub
-manages the HTTPS certificate; enable HTTPS enforcement once it is issued.
+manages the approved HTTPS certificate for `telephote.co` and `www.telephote.co`.
+HTTPS enforcement is enabled. HTTP, www and the former GitHub Pages URL return
+permanent redirects to https://telephote.co/.
 
 Reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
