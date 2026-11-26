@@ -11,6 +11,7 @@ Windows UI preview, with no captured phone video.
 - No analytics, visitor accounts, form collection or backend.
 - Preview locally with a static HTTP server.
 - Pricing: A$5 (AUD) for the iPhone app; the Windows companion is free.
+- Canonical website: https://telephote.co/
 
 ## Search metadata
 
@@ -19,16 +20,14 @@ URL, social sharing tags, accessible image text and structured data for the two
 applications. Prices match the visible download cards. No ratings or reviews are
 invented; structured data does not guarantee a Google rich result.
 
-`sitemap.xml` lists the live landing page. After connecting telephote.co, replace
-the GitHub Pages base URL throughout `index.html`, `sitemap.xml` and `robots.txt`
-with `https://telephote.co/`, then verify the domain in Google Search Console and
-submit the sitemap. At the temporary GitHub project URL, robots.txt is below the
-host root and is not the host-wide robots file; normal crawling remains allowed.
+`sitemap.xml` lists https://telephote.co/. Canonical, social, structured-data and
+robots sitemap URLs all use that domain. Google Search Console ownership
+verification and sitemap submission are separate follow-up steps.
 
 ## telephote.co / GoDaddy
 
-The GitHub Pages URL works before changing DNS. In GoDaddy DNS, point the apex
-`@` to GitHub Pages with four A records:
+Configured on 26 November 2026 in GoDaddy. The apex points to GitHub Pages with
+four A records, and `www` points to the GitHub account's Pages hostname:
 
 | Type | Name | Value |
 | --- | --- | --- |
@@ -38,9 +37,8 @@ The GitHub Pages URL works before changing DNS. In GoDaddy DNS, point the apex
 | A | @ | 185.199.111.153 |
 | CNAME | www | adminpointsjunkie.github.io |
 
-Configure `telephote.co` as the repository's Pages custom domain before pointing
-DNS to it. Preserve unrelated mail/TXT records. After GitHub verifies DNS and
-issues its certificate, enable HTTPS enforcement. Update the absolute social
-image URL in `index.html` when the domain is active.
+The repository's Pages custom domain and root `CNAME` file use `telephote.co`.
+GoDaddy nameservers, the domain-connect record and DMARC were preserved. GitHub
+manages the HTTPS certificate; enable HTTPS enforcement once it is issued.
 
 Reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site

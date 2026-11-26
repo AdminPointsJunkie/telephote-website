@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adminpointsjunkie.github.io/telephote-website/sitemap.xml
+Sitemap: https://telephote.co/sitemap.xml
