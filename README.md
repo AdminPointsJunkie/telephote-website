@@ -6,11 +6,14 @@ Windows UI preview, with no captured phone video.
 
 - Hosting: GitHub Pages from `main`, repository root.
 - Desktop downloads: GitHub Releases in this repository; do not commit ZIP/tar.gz archives.
-- Linux: linux.html and the homepage card link to v0.4.0-linux.1. Keep the preview status, v4l2loopback/usbmuxd requirements and manual-update limit visible.
-- assets/linux-app.png is an actual Ubuntu-rendered UI with no phone video.
+- Linux: linux.html and the homepage card link to v0.5.0. Keep the preview status, v4l2loopback/usbmuxd requirements and manual-update limit visible.
+- assets/linux-app.png is the 0.5.0 Avalonia headless UI render on Windows, with no phone video.
 - iPhone download: intentionally unavailable until a public App Store/TestFlight
   URL is supplied. Replace the disabled button in `index.html` with that URL.
-- No analytics, visitor accounts, form collection or backend.
+- Download statistics and their retention are documented in privacy.html; this release does not change that collection. No iPhone app analytics.
+- Version 0.5.0 is a GitHub prerelease/manual download; stable in-app updates remain on 0.3.1.
+- audio.html describes microphone requirements and the unfinished native Windows USB route.
+- The optional unsigned MSI is in the release assets for separately permitted PCs; the main download remains portable. No installer was run on the work PC.
 - Preview locally with a static HTTP server.
 - Pricing: A$5 (AUD) for the iPhone app; the Windows companion is free.
 - Canonical website: https://telephote.co/

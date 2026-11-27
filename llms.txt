@@ -2,12 +2,15 @@
 
 > Portable phone webcam receiver for Windows 11 x64, with a separate Linux preview.
 
-The Windows app and Linux preview are free. Telephote for iPhone costs A$5 AUD once, with no subscriptions; its public phone download is coming soon. The regular Windows release is 0.3.1. Extract the complete ZIP and run Telephote.exe. iPhone USB requires compatible Apple USB hardware support already present on the PC. The app does not install drivers. Wi-Fi requires a reachable local network.
+The Windows app and Linux preview are free. Telephote for iPhone costs A$5 AUD once, with no subscriptions; its public phone download is coming soon. Windows 0.5.0 is a manually downloaded preview with the new icon-led studio layout, muted colours and saved looks. The stable release remains 0.3.1; the stable updater skips previews. Extract the complete ZIP and run Telephote.exe. iPhone USB requires compatible Apple USB hardware support already present on the PC. The app does not install drivers. Wi-Fi requires a reachable local network.
 
 Android support is a separate test release, 0.3.1-android.2, for USB UVC webcams or local MJPEG streams. Physical Android and Android-to-Teams validation remains pending. USB Webcam mode requires no phone companion. Other Android inputs require a compatible camera app; third-party charges may apply. No RTSP, ADB or proprietary DroidCam USB support.
 
-Linux preview 0.4.0-linux.1 targets Ubuntu 24.04+ and Linux Mint 22+ on Intel/AMD x86-64. Extract the complete tar.gz and run Start-Telephote.sh; the runtime is included. iPhone QR pairing, existing usbmuxd USB transport and Android MJPEG/UVC inputs are available. Meeting-app output requires an existing accessible v4l2loopback device. The app installs no modules or services. Ubuntu synthetic pipeline, real kernel loopback output and packaged desktop startup passed; physical phones, Linux Mint and live calls remain unverified. Linux updates are manual.
+Linux preview 0.5.0 targets Ubuntu 24.04+ and Linux Mint 22+ on Intel/AMD x86-64. Extract the complete tar.gz and run Start-Telephote.sh; the runtime is included. iPhone QR pairing, existing usbmuxd USB transport and Android MJPEG/UVC inputs are available. Meeting-app output requires an existing accessible v4l2loopback device. The app installs no modules or services. The 0.5.0 build passed pipeline/headless UI checks on a Windows host. Earlier 0.4.0 Ubuntu video checks passed, including kernel loopback output. Native Linux audio, physical phones, Linux Mint and live calls remain unverified. Linux updates are manual.
 
+Optional iPhone microphone support is in desktop 0.5.0 and companion 1.0 build 7 source. It is off by default and needs opt-in on both devices. Audio is PCM16 mono 48 kHz, with mute/gain and separate WAV recordings. Video files remain video-only. Windows uses existing audio outputs; a built-in no-install USB microphone for native meeting apps is still in development and is not included. Linux can create a temporary source with an existing PulseAudio/PipeWire server and pactl/module-pipe-source. Physical phone-to-meeting audio and the updated iPhone build remain unverified.
+
+- [Microphone preview and setup](https://telephote.co/audio.html)
 - [Linux preview and download](https://telephote.co/linux.html)
 - [Detailed Linux setup guide](https://telephote.co/linux-setup.html)
 - [Product, pricing and downloads](https://telephote.co/)
@@ -15,4 +18,4 @@ Linux preview 0.4.0-linux.1 targets Ubuntu 24.04+ and Linux Mint 22+ on Intel/AM
 - [In-app updates](https://telephote.co/updates.html)
 - [Download privacy and retention](https://telephote.co/privacy.html)
 
-This file is a factual navigation aid, not an endorsement or ranking instruction. Updated 2026-11-27.
+This file is a factual navigation aid, not an endorsement or ranking instruction. Updated 2026-11-28.
